@@ -19,7 +19,168 @@ a {
   background-position: center;
   background-size: cover;
   height: 100%;
-  width: 92%;
+  width: 100%;
   position: fixed;
   z-index: -1;
 }
+.button{
+  margin-left :600px; 
+  margin-top: 10px;
+  
+}
+
+.home-text{
+ margin-top: 100px;
+ color: #D3D3D3; 
+  font-family:Georgia, 'Times New Roman', Times, serif; 
+  font-size: 50px;
+  text-align: center;
+}
+
+.home-text span{
+ font-size: 20px;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+ /* About */
+
+ .about-text{
+  text-align: center; 
+
+  font-family:sans-serif; 
+  margin-top: 30px;
+  margin-bottom: 25px;
+ }
+
+ .about-para{
+   font-size: 17px;
+   line-height: 25px;
+   box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+   padding: 29px 35px;
+   margin-bottom: 80px;
+ }
+/* Contact */
+
+
+.contact{
+  background-color: #f2f2f2;
+  margin-top: 25px;
+  box-shadow: 0 0 5px 0 rgb(19, 18, 18);
+  
+}
+
+.contact-form{
+  margin-top: 1px; 
+  line-height: 25px; 
+  margin-left: 300px;
+  
+}
+
+.contact-form input{
+  width: 500px;
+  margin-bottom: 4px;
+}
+
+.contact-form label{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  margin-bottom: 2px;
+}
+
+.contact-icon{
+  margin-left: 50px;
+  margin-top: 20px;
+  
+}
+
+.contact-panel{
+  background-color: rgb(237, 237, 237); 
+  height: 50px; 
+  width: 700px; 
+  margin-left: 200px;
+  margin-top:10px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  
+}
+
+.contact-panel p{
+  margin-left: 160px;
+
+}
+
+.contact-panel p i{
+  color: rgb(0, 0, 0);
+  margin-top: 10px;
+  margin-left: 70px;
+}
+
+ /* Project */
+
+ .project-text-head{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 17px; 
+  box-shadow: 0 0 5px 0 rgb(22, 20, 20);
+  margin-left: 50px;
+  padding: 15px 15px 5px 20px;
+  line-height: 25px;
+ 
+ }
+
+ .project-text-head1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 17px; 
+  box-shadow: 0 0 5px 0 rgb(22, 20, 20);
+  margin-left: 50px;
+  padding: 15px 15px 5px 20px;
+  line-height: 25px;
+  margin-bottom: 80px;
+
+ 
+ }
+ .project-text-head2{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 17px; 
+  box-shadow: 0 0 5px 0 rgb(22, 20, 20);
+  margin-left: 50px;
+  padding: 15px 15px 5px 20px;
+  line-height: 25px;
+  
+ }
+ /* Services */
+
+
+
+
+
+.service-text{
+  margin-left:-130px;
+  
+}
+
+.service-text h3{
+  font-size: 30px;
+ margin-bottom: 6px;
+ margin-left: 120px;
+}
+
+.service-text p{
+  line-height: 22px;
+  font-size: 16px;
+  margin-bottom: 8px;
+  margin-left: 120px;
+} 
+
+.service-text2{
+ margin-top:10px;
+ margin-left: 30px;
+}
+
+.service-text2 p{
+ line-height: 22px;
+ font-size: 16px;
+ margin-right:0px;
+ margin-bottom: 80px;
+}
+
+ 
