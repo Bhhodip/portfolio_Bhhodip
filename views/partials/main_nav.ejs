@@ -1,0 +1,71 @@
+  <!--main nav-->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark " >
+<div class="container-fluid">
+    <!-- Brand/logo --> 
+    <p style="margin-left : 20px;">
+        <a class="navbar-brand" href="#">
+            <p style="margin-right: 250px; margin-top: 0px; margin-bottom: 0px;" >
+                <img src="/images/logo.png" alt="logo" style="width: 50px;" ></p>
+        </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+    <ul class="navbar-nav space">
+    
+      
+        <li class="nav-item"> 
+            <% if (title == "Home") { %>
+                <a class="nav-link active" href="/"> 
+            <%} else { %>
+                <a class="nav-link" href="/">
+            <% } %>
+                <i class="fas fa-home"></i> Home </a>
+            </a>
+        </li>
+        
+        <li class="nav-item"> 
+            <% if (title == "Projects") { %>
+                <a class="nav-link active" href="/projects"> 
+            <%} else { %>
+                <a class="nav-link" href="/projects">
+            <% } %>
+                <i class="fas fa-tasks"></i> Projects </a> 
+            </a>
+        </li>
+
+        <li class="nav-item"> 
+            <% if (title == "Services") { %>
+                <a class="nav-link active" href="/services"> 
+            <%} else { %>
+                <a class="nav-link" href="/services">
+            <% } %>
+                <i class="fab fa-aws"></i> Services </a> 
+            </a>
+        </li>
+        
+        <li class="nav-item"> 
+            <% if (title == "About") { %>
+                <a class="nav-link active" href="/about">
+            <%} else { %>
+                <a class="nav-link" href="/about">
+            <% } %>
+                <i class="far fa-address-card"></i> About </a>
+            </a>
+        </li>
+
+        <li class="nav-item"> 
+            <% if (title == "Contact Me") { %>
+                <a class="nav-link active" href="/contact">
+            <%} else { %>
+                <a class="nav-link" href="/contact">
+            <% } %>
+                <i class="far fa-address-book"></i> Contact  </a>
+            </a>
+        </li>
+
+        
+      
+    </ul>
+  </p>
+</div>
+</div>
+  </nav>

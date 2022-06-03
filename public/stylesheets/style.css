@@ -1,0 +1,25 @@
+body {
+  padding: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+/* Nav bar*/
+
+.space li{
+  font-size: 15px;
+  margin-left: 20px;
+}
+
+/* Home */
+.img{
+  background-image: url('/images/bg.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 92%;
+  position: fixed;
+  z-index: -1;
+}
