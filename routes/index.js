@@ -25,6 +25,9 @@ router.get('/services', function(req, res, next) {
 router.get('/contact', function(req, res, next) {
   res.render('index', { title: 'Contact' });
 });
+router.get('/contacts', function(req, res, next) {
+  res.render('index', { title: 'bContact' });
+});
 
 
 module.exports = router;
