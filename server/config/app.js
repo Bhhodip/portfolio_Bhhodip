@@ -45,6 +45,36 @@ app.use(express.static(path.join(__dirname, '../../public')));
 app.use(express.static(path.join(__dirname, '../../node_modules')));
 app.use(express.static(path.join(__dirname, '../views')));
 
+//setup express session
+app.use(session({
+  secret: "SomeSecret",
+  saveUninitialized: false,
+  resave: false
+}));
+
+// initialize flash
+app.use(flash());
+
+// initialize passport
+app.use(passport.initialize());
+app.use(passport.session());
+
+// passport user configuration
+
+// create a User Model Instance
+let userModel = require('../models/user');
+let User = userModel.User;
+
+// implement a User Authentication Strategy
+passport.use(User.createStrategy());
+
+// serialize and deserialize the User info
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
+
+
+
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/contactslist',contactsRouter);

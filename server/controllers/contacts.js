@@ -15,13 +15,13 @@ module.exports.displaycontactslist = (req, res, next) => {
         {
            
 
-            res.render('contacts/list', {title: 'Contacts List', contactslist: contactslist})           
+            res.render('contacts/list', {title: 'Contacts List', contactslist: contactslist,displayName:req.user?req.user.displayName:''})           
         }
     });
 };
 
 module.exports.displayAddpage =(req,res,next)=>{
-    res.render('contacts/add', {title: ' Add Contact'}) 
+    res.render('contacts/add', {title: ' Add Contact',displayName:req.user?req.user.displayName:''}) 
 };
 
 module.exports.processAddpage=(req,res,next)=>{
@@ -56,8 +56,8 @@ module.exports.processAddpage=(req,res,next)=>{
         }
         else
         {
-            //show the edit view
-            res.render('contacts/edit', {title: 'Edit contact', contacts: contactsToEdit})
+            
+            res.render('contacts/edit', {title: 'Edit contact', contacts: contactsToEdit,displayName:req.user?req.user.displayName:''})
         }
     });
 
@@ -83,7 +83,7 @@ module.exports.processEditpage =
         }
         else
         {
-            // refresh the book list
+            
             res.redirect('/contactslist');
         }
     }); 
@@ -100,7 +100,6 @@ module.exports.performdelete =(req,res,next)=>{
         }
         else
         {
-             // refresh the book list
              res.redirect('/contactslist');
         }
     });
