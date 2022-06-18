@@ -1,9 +1,9 @@
-#!/usr/bin/env node
-
-/**
- * Module dependencies.
- */
-
+/*
+File Name - server.js
+Student Name - Bhhodip patel
+Student ID - 301251644
+Date - 17-6-2022
+*/
 var app = require('./server/config/app');
 var debug = require('debug')('portfolio-bhhodip:server');
 var http = require('http');
@@ -62,7 +62,7 @@ function onError(error) {
     ? 'Pipe ' + port
     : 'Port ' + port;
 
-  // handle specific listen errors with friendly messages
+  
   switch (error.code) {
     case 'EACCES':
       console.error(bind + ' requires elevated privileges');
@@ -77,9 +77,7 @@ function onError(error) {
   }
 }
 
-/**
- * Event listener for HTTP server "listening" event.
- */
+
 
 function onListening() {
   var addr = server.address();
